@@ -50,13 +50,13 @@
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
           <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Basculer la navigation</span>
           </a>
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
               <li class="dropdown user user-menu">
                 <a href="<?php echo base_url(); ?>addNewBooking" class="bg-primary">
-                  <span><i class="fa fa-plus"></i><b> Add New Booking</b></span>
+                  <span><i class="fa fa-plus"></i><b> Ajouter une nouvelle réservation</b></span>
                 </a>
               <li>
               <!-- User Account: style can be found in dropdown.less -->
@@ -77,10 +77,10 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="<?php echo base_url(); ?>loadChangePass" class="btn btn-default btn-flat"><i class="fa fa-key"></i> Change Password</a>
+                      <a href="<?php echo base_url(); ?>loadChangePass" class="btn btn-default btn-flat"><i class="fa fa-key"></i> Changer le mot de passe</a>
                     </div>
                     <div class="pull-right">
-                      <a href="<?php echo base_url(); ?>logout" class="btn btn-default btn-flat"><i class="fa fa-sign-out"></i> Sign out</a>
+                      <a href="<?php echo base_url(); ?>logout" class="btn btn-default btn-flat"><i class="fa fa-sign-out"></i> Déconnexion</a>
                     </div>
                   </li>
                 </ul>
@@ -95,22 +95,22 @@
         <section class="sidebar">
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header">NAVIGATION PRINCIPALE</li>
             <li class="treeview">
               <a href="<?php echo base_url(); ?>dashboard">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span></i>
+                <i class="fa fa-dashboard"></i> <span>Tableau de bord</span></i>
               </a>
             </li>
             <li class="treeview">
               <a href="<?php echo base_url(); ?>customer">
                 <i class="fa fa-users"></i>
-                <span>Customers</span>
+                <span>Les clients</span>
               </a>
             </li>
             <li class="treeview">
               <a href="<?php echo base_url(); ?>bookings">
                 <i class="fa fa-book"></i>
-                <span>Bookings</span>
+                <span>Réservations</span>
               </a>
             </li>
             <?php
@@ -120,29 +120,29 @@
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-plane"></i>
-                <span>Management</span>
+                <span>La gestion</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>              
               <ul class="treeview-menu menu-open">
                 <li>
                   <a href="<?php echo base_url(); ?>floorsListing" >
-                    <i class="fa fa-circle-o"></i> Floors
+                    <i class="fa fa-circle-o"></i> Étages
                   </a>
                 </li>
                 <li>
                   <a href="<?php echo base_url(); ?>roomSizesListing" >
-                    <i class="fa fa-circle-o"></i> Room Sizes
+                    <i class="fa fa-circle-o"></i> Tailles des chambres
                   </a>
                 </li>
                 
                 <li>
                   <a href="<?php echo base_url(); ?>roomListing" >
-                    <i class="fa fa-circle-o"></i> Rooms 
+                    <i class="fa fa-circle-o"></i> Chambres 
                   </a>
                 </li>
                 <li>
                   <a href="<?php echo base_url(); ?>baseFareListing" >
-                    <i class="fa fa-circle-o"></i> Base Fare 
+                    <i class="fa fa-circle-o"></i> Tarif de base
                   </a>
                 </li>
                 
@@ -158,13 +158,13 @@
             <li class="treeview">
               <a href="<?php echo base_url(); ?>userListing">
                 <i class="fa fa-users"></i>
-                <span>Users</span>
+                <span>Utilisateurs</span>
               </a>
             </li>
             <li class="treeview">
               <a href="#" >
                 <i class="fa fa-files-o"></i>
-                <span>Reports</span>
+                <span>Rapports</span>
               </a>
             </li>
             <?php

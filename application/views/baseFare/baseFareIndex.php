@@ -5,9 +5,9 @@ $selected = "selected='selected'";
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Base Fare Management
-        <small>Add, Edit, Delete</small>
-        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewBaseFare"><i class="fa fa-plus" aria-hidden="true"></i> Add New Base Fare</a></span>
+        Gestion des tarifs de base
+        <small>Ajouter / modifier / supprimer</small>
+        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewBaseFare"><i class="fa fa-plus" aria-hidden="true"></i> Ajouter un nouveau tarif de base</a></span>
       </h1>
     </section>
     <section class="content">
@@ -22,14 +22,14 @@ $selected = "selected='selected'";
             <div class="col-xs-12">
               <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Base Fare List</h3>
+                    <h3 class="box-title">Liste des tarifs de base</h3>
                     <div class="box-tools">
                         <form action="<?php echo base_url() ?>baseFareListing" method="POST" id="searchList">
                           <div class="row">
                             <div class="col-md-6">
                               <div class="input-group">
                                 <select class="form-control input-sm" id="searchRoomSizeId" name="searchRoomSizeId">
-                                    <option value="">Select Room Sizes</option>
+                                    <option value="">Select taille des chambres</option>
                                     <?php
                                     if(!empty($roomSizes))
                                     {
@@ -61,12 +61,12 @@ $selected = "selected='selected'";
                 <div class="box-body table-responsive no-padding">
                   <table class="table table-hover">
                     <tr>
-                      <th>Room Size</th>
-                      <th>Room Description</th>
-                      <th>Hourly Fare</th>
-                      <th>Daily Fare</th>
-                      <th>Service Tax</th>
-                      <th>Service Charge</th>
+                      <th>Taille du chambre</th>
+                      <th>Description du chambre</th>
+                      <th>Tarif horaire</th>
+                      <th>Tarif journalier</th>
+                      <th>Taxe de service</th>
+                      <th>Frais de service</th>
                       <th>Total</th>
                       <th width="10%" class="text-center">Actions</th>
                     </tr>

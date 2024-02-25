@@ -2,8 +2,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-      <i class="fa fa-book" aria-hidden="true"></i> Booking Management
-        <small>Create / Edit Booking</small>
+      <i class="fa fa-book" aria-hidden="true"></i> Gestion des réservations
+        <small>Créer / Modifier une réservation</small>
       </h1>
     </section>
     
@@ -15,7 +15,7 @@
                 
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">Enter Booking Details : <b><?= $bookingDetails->customerName ?></b> (<?= date('Y-m-d', strtotime($bookingDetails->bookStartDate)) ?> to <?= date('Y-m-d', strtotime($bookingDetails->bookEndDate)) ?>)</h3>
+                        <h3 class="box-title">Entrez les détails de la réservation : <b><?= $bookingDetails->customerName ?></b> (<?= date('Y-m-d', strtotime($bookingDetails->bookStartDate)) ?> to <?= date('Y-m-d', strtotime($bookingDetails->bookEndDate)) ?>)</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
                     
@@ -24,7 +24,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="startDate">From Date</label>
+                                        <label for="startDate">Date début</label>
                                         <div class="input-group">
                                             <input type="text" id="startDate" name="startDate" value="<?= date('Y-m-d', strtotime($bookingDetails->bookStartDate)); ?>" class="form-control" placeholder="yyyy-mm-dd" autocomplete="off" />
                                             <input type="hidden" name='bookingId' id='bookingId' value='<?= $bookingDetails->bookingId ?>' />
@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="endDate">To Date</label>
+                                        <label for="endDate">Date fin</label>
                                         <div class="input-group">
                                             <input type="text" id="endDate" name="endDate" value="<?= date('Y-m-d', strtotime($bookingDetails->bookEndDate)); ?>" class="form-control" placeholder="yyyy-mm-dd" autocomplete="off" />
                                             <div class="input-group-addon">
@@ -49,9 +49,9 @@
                             <div class="row">
 								<div class="col-md-6">                                
                                     <div class="form-group">
-                                        <label for="floorId">Floor</label>
+                                        <label for="floorId">Étage</label>
                                         <select class="form-control" id="floorId" name="floorId">
-                                            <option value="">Select Floor</option>
+                                            <option value="">Select Étage</option>
                                             <?php
                                             if(!empty($floors))
                                             {
@@ -69,9 +69,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="sizeId">Room Size</label>
+                                        <label for="sizeId">taille du chambre</label>
                                         <select class="form-control" id="sizeId" name="sizeId">
-                                            <option value="">Select Room Sizes</option>
+                                            <option value="">Select taille du chambre</option>
                                             <?php
                                             if(!empty($roomSizes))
                                             {
@@ -98,9 +98,9 @@
                             <div class="row">
 							    <div class="col-md-6">                                
                                     <div class="form-group">
-                                        <label for="roomId">Room Number</label>
+                                        <label for="roomId">Numero du chambre</label>
                                         <select class="form-control" id="roomId" name="roomId" readonly style='pointer-events:none'>
-                                            <option value="">Select Room</option>
+                                            <option value="">Select chambre</option>
                                             <?php
                                             if(!empty($rooms))
                                             {
@@ -118,15 +118,15 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="customerId">Customer (Click on <i class="fa fa-search"></i> for search)</label>
+                                        <label for="customerId">Client (Cliquer sur <i class="fa fa-search"></i> pour chercher)</label>
                                         <div class="input-group">
-                                            <input type="text" value="" class="form-control" id="customerName" name="customerName" placeholder="Type name and click on magnifier" autocomplete="off" />
+                                            <input type="text" value="" class="form-control" id="customerName" name="customerName" placeholder="Tapez le nom et cliquez sur la loupe" autocomplete="off" />
                                             <div class="input-group-addon">
                                                 <i class="fa fa-search" id="searchCustomer"></i>
                                             </div>
                                         </div>
                                         <select class="form-control" id="customerId" name="customerId">
-                                            <option value="">Select Customer</option>
+                                            <option value="">Select Client</option>
                                             <option value='<?= $bookingDetails->customerId ?>' selected><?= $bookingDetails->customerName ?></option>
                                         </select>
                                     </div>
@@ -135,7 +135,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="comments">Comments </label>
+                                        <label for="comments">Commentaires </label>
                                         <textarea name='comments' id="comments"><?php echo $bookingDetails->bookingComments; ?></textarea>
                                     </div>
                                 </div>

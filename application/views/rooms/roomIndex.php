@@ -5,9 +5,9 @@ $selected = "selected='selected'";
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Rooms Management
-        <small>Add, Edit, Delete</small>
-        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewRoom"><i class="fa fa-plus" aria-hidden="true"></i> Add New Room</a></span>
+        Gestion des Chambres
+        <small>Ajouter / modifier / supprimer</small>
+        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewRoom"><i class="fa fa-plus" aria-hidden="true"></i> Ajouter une nouvelle chambres</a></span>
       </h1>
     </section>
     <section class="content">
@@ -22,14 +22,14 @@ $selected = "selected='selected'";
             <div class="col-xs-12">
               <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Rooms List</h3>
+                    <h3 class="box-title">Liste des chambres</h3>
                     <div class="box-tools">
                         <form action="<?php echo base_url() ?>roomListing" method="POST" id="searchList">
                           <div class="row">
                             <div class="col-md-4">
                               <div class="input-group">
                                 <select class="form-control input-sm" id="floorId" name="floorId">
-                                  <option value="">Select Floor</option>
+                                  <option value="">Select Étages </option>
                                   <?php
                                     if(!empty($floors))
                                     {
@@ -48,7 +48,7 @@ $selected = "selected='selected'";
                             <div class="col-md-4">
                               <div class="input-group">
                                 <select class="form-control input-sm" id="sizeId" name="sizeId">
-                                    <option value="">Select Room Sizes</option>
+                                    <option value="">Select tailles du chambre</option>
                                     <?php
                                     if(!empty($roomSizes))
                                     {
@@ -81,10 +81,10 @@ $selected = "selected='selected'";
                   <table class="table table-hover">
                     <tr>
                       <th>Id</th>
-                      <th>Room Number</th>
-                      <th>Room Size</th>
-                      <th>Room Description</th>
-                      <th>Room Floor</th>
+                      <th>Numero du chambre</th>
+                      <th>Taille du chambre</th>
+                      <th>Description du chambre</th>
+                      <th>Étages du chambre</th>
                       <th width="10%" class="text-center">Actions</th>
                     </tr>
                     <?php

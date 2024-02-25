@@ -20,8 +20,8 @@ if(!empty($roomSizeInfo))
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Room Size Management
-        <small>Add / Edit Room Size</small>
+        Gestion de la taille du Chambre
+        <small>Ajouter/Modifier la taille du chambre</small>
       </h1>
     </section>
     
@@ -36,7 +36,7 @@ if(!empty($roomSizeInfo))
                 
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">Enter Room Size Details</h3>
+                        <h3 class="box-title">Entrez les détails de la taille du chambre</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
                     
@@ -45,7 +45,7 @@ if(!empty($roomSizeInfo))
                             <div class="row">
                                 <div class="col-md-12">                                
                                     <div class="form-group">
-                                        <label for="sizeTitle">Room Size Title</label>
+                                        <label for="sizeTitle">Titre de la taille du chambre</label>
                                         <input type="text" class="form-control required" id="sizeTitle" name="sizeTitle" maxlength="512" value="<?php echo $sizeTitle; ?>">
                                         <input type="hidden" value="<?php echo $sizeId; ?>" name="sizeId" />
                                     </div>
@@ -55,7 +55,7 @@ if(!empty($roomSizeInfo))
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="sizeDescription">Room Size Description</label>
+                                        <label for="sizeDescription">Description de la taille du chambre</label>
                                         <textarea name="sizeDescription" id="sizeDescription" style="width:100%"><?php echo $sizeDescription; ?></textarea>
                                     </div>
                                 </div>

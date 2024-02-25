@@ -22,8 +22,8 @@ if(!empty($floorInfo))
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Floors Management
-        <small>Edit Floor</small>
+        Gestion des Étages
+        <small>Modifier l'étage</small>
       </h1>
     </section>
     
@@ -36,7 +36,7 @@ if(!empty($floorInfo))
                 
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">Enter Floors Details</h3>
+                        <h3 class="box-title">Entrer les détails des étages</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
                     
@@ -45,13 +45,13 @@ if(!empty($floorInfo))
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="floorCode">Floor Code</label>
+                                        <label for="floorCode">Code d'étage</label>
                                         <input type="text" value="<?php echo $floorCode; ?>" class="form-control" id="floorCode" name="floorCode" maxlength="10">
                                     </div>
                                 </div>
                                 <div class="col-md-6">                                
                                     <div class="form-group">
-                                        <label for="floorName">Floor Name</label>
+                                        <label for="floorName">Nom de l'étage</label>
                                         <input type="text" value="<?php echo $floorName; ?>" class="form-control" id="floorName" name="floorName" maxlength="50">
                                         <input type="hidden" value="<?php echo $floorId; ?>" name="floorId" />
                                     </div>                                    
@@ -60,7 +60,7 @@ if(!empty($floorInfo))
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="floorDescription">Floor Description</label>
+                                        <label for="floorDescription">Description de l'étage</label>
                                         <textarea name="floorDescription" id="floorDescription" style="width:100%"><?php echo $floorDescription; ?></textarea>
                                     </div>
                                 </div>

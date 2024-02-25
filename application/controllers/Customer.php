@@ -90,11 +90,11 @@ class Customer extends BaseController
             
             if($result > 0)
             {
-                $this->session->set_flashdata('success', 'New customer created successfully');
+                $this->session->set_flashdata('success', 'Nouveau client créé avec succès');
             }
             else
             {
-                $this->session->set_flashdata('error', 'Customer creation failed');
+                $this->session->set_flashdata('error', 'La création du client a échoué');
             }
             
             redirect('addNewCustomer');
@@ -153,11 +153,11 @@ class Customer extends BaseController
             
             if($result == true)
             {
-                $this->session->set_flashdata('success', 'Customer updated successfully');
+                $this->session->set_flashdata('success', 'Client mis à jour avec succès');
             }
             else
             {
-                $this->session->set_flashdata('error', 'Customer updation failed');
+                $this->session->set_flashdata('error', 'La mise à jour du client a échoué');
             }
             
             redirect('customer');

@@ -2,8 +2,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Floors Management
-        <small>Add / Edit Floor</small>
+        Gestion des Étages
+        <small>Ajouter/Modifier un étage</small>
       </h1>
     </section>
     
@@ -16,7 +16,7 @@
                 
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">Enter Floors Details</h3>
+                        <h3 class="box-title">Entrer les détails des étages</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
                     
@@ -25,13 +25,13 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="floorCode">Floor Code</label>
+                                        <label for="floorCode">Code d'étage</label>
                                         <input type="text" class="form-control" id="floorCode" name="floorCode" maxlength="10" placeholder="E.g. GROUND, FIRST etc">
                                     </div>
                                 </div>
                                 <div class="col-md-6">                                
                                     <div class="form-group">
-                                        <label for="floorName">Floor Name</label>
+                                        <label for="floorName">Nom de l'étage</label>
                                         <input type="text" class="form-control" id="floorName" name="floorName" maxlength="50" placeholder="E.g. Ground Floor, First Floor etc">
                                     </div>
                                 </div>                                
@@ -39,7 +39,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="floorDescription">Floor Description</label>
+                                        <label for="floorDescription">Description de l'étage</label>
                                         <textarea name="floorDescription" id="floorDescription" style="width:100%"></textarea>
                                     </div>
                                 </div>

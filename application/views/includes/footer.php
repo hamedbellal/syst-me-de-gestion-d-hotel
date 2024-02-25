@@ -2,9 +2,9 @@
 
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>DigiLodge</b> Digital Lodging System | Version 1.0
+          <b>DigiLodge</b> Projet Fin d'Etude 
         </div>
-        <strong>Copyright &copy; 2014-2015 <a href="<?php echo base_url(); ?>">DigiLodge</a>.</strong> All rights reserved.
+        <strong>Système d'hébergement  <a href="<?php echo base_url(); ?>">DigiLodge</a>.</strong> PFE
     </footer>
     
     <!-- jQuery UI 1.11.2 -->

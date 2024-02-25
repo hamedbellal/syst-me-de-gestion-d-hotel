@@ -5,10 +5,10 @@ $selected = "selected='selected'";
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        <i class="fa fa-book" aria-hidden="true"></i> Bookings
-        <small>Add, Edit, Delete</small>
+        <i class="fa fa-book" aria-hidden="true"></i> Réservations
+        <small>Ajouter / modifier / supprimer</small>
         <span class='pull-right'>
-        <a class="btn btn-primary btn-lg hidden-xs" href="<?= base_url(); ?>addNewBooking"><i class="fa fa-plus" aria-hidden="true"></i> Add New Booking</a>
+        <a class="btn btn-primary btn-lg hidden-xs" href="<?= base_url(); ?>addNewBooking"><i class="fa fa-plus" aria-hidden="true"></i> Ajouter une nouvelle réservation</a>
         </span>
       </h1>
     </section>
@@ -20,7 +20,7 @@ $selected = "selected='selected'";
             
                 <div class="col-md-2">
                     <select class="form-control input-sm" id="floorId" name="floorId">
-                        <option value="">Select Floor</option>
+                        <option value="">Étage</option>
                         <?php
                         if(!empty($floors))
                         {
@@ -38,7 +38,7 @@ $selected = "selected='selected'";
                 </div>
                 <div class="col-md-2">
                     <select class="form-control input-sm" id="sizeId" name="sizeId">
-                        <option value="">Select Room Sizes</option>
+                        <option value="">taille du chambre</option>
                         <?php
                         if(!empty($roomSizes))
                         {
@@ -56,7 +56,7 @@ $selected = "selected='selected'";
                 </div>
                 <div class="col-md-2">
                 <select class="form-control input-sm" id="roomId" name="roomId">
-                        <option value="">Select Room</option>
+                        <option value="">chambre</option>
                         <?php
                         if(!empty($rooms))
                         {
@@ -73,10 +73,10 @@ $selected = "selected='selected'";
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <input type="text" name="customerName" value="<?= $customerName; ?>" class="form-control input-sm" placeholder="Customer Name" autocomplete="off" />
+                    <input type="text" name="customerName" value="<?= $customerName; ?>" class="form-control input-sm" placeholder="Nom du client" autocomplete="off" />
                 </div>
                 <div class="col-md-2">
-                    <input type="text" name="mobileNumber" value="<?= $mobileNumber; ?>" class="form-control input-sm" placeholder="Mobile Number" autocomplete="off" />
+                    <input type="text" name="mobileNumber" value="<?= $mobileNumber; ?>" class="form-control input-sm" placeholder="Numéro de portable" autocomplete="off" />
                     <!-- <button class="btn btn-sm btn-block btn-default searchList"><i class="fa fa-search"></i></button> -->
                 </div>
                 <div class="col-md-1">
@@ -111,19 +111,19 @@ $selected = "selected='selected'";
             <div class="col-xs-12">
               <div class="box">
                 <div class="box-header" style='padding-bottom: 15px'>
-                    <h3 class="box-title">Booking List</h3>
+                    <h3 class="box-title">Liste de réservation</h3>
                     <div class="box-tools">
                     </div>
                 </div><!-- /.box-header -->
                 <div class="box-body table-responsive no-padding">
                   <table class="table table-hover">
                     <tr>
-                        <th>Room</th>
-                        <th>Start Date</th>
-                        <th>End Date</th>
-                        <th>Name</th>
-                        <th>Details</th>
-                        <th>Booking Date</th>
+                        <th>chambre</th>
+                        <th>Date de début</th>
+                        <th>Date de fin</th>
+                        <th>Nom</th>
+                        <th>Détails</th>
+                        <th>Date de réservation</th>
                         
                         <th class="text-center">Actions</th>
                     </tr>
@@ -142,7 +142,7 @@ $selected = "selected='selected'";
                         <td><?= $record->bookingComments ?></td>
                         <td><?= $record->bookingDtm ?></td>
                         <td width="15%" class="text-center">
-                          <a href="<?php echo base_url().'booking/editOldBooking/'.$record->bookingId; ?>" class="btn btn-sm btn-warning" title="Information"><i class="fa fa-info-circle"></i></a>
+                          <!--a href="<?php echo base_url().'booking/editOldBooking/'.$record->bookingId; ?>" class="btn btn-sm btn-warning" title="Information"><i class="fa fa-info-circle"></i></a-->
                           <a href="<?php echo base_url().'booking/editOldBooking/'.$record->bookingId; ?>" class="btn btn-sm btn-info" title="Edit"><i class="fa fa-pencil"></i></a>
                           <a href="#" data-bookid="<?php echo $record->bookingId; ?>" class="deleteBooking btn btn-sm btn-danger" title="Delete"><i class="fa fa-trash"></i></a>
                       </td>

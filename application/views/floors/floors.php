@@ -2,9 +2,9 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Floors Management
-        <small>Add, Edit, Delete</small>
-        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewFloor"><i class="fa fa-plus" aria-hidden="true"></i> Add New Floor</a></span>
+        Gestion des Étages
+        <small>Ajouter / modifier / supprimer</small>
+        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewFloor"><i class="fa fa-plus" aria-hidden="true"></i> Ajouter un nouvel étage</a></span>
       </h1>
     </section>
     <section class="content">
@@ -19,7 +19,7 @@
             <div class="col-xs-12">
               <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Floors List</h3>
+                    <h3 class="box-title">Liste des Étages</h3>
                     <div class="box-tools">
                         <form action="<?php echo base_url() ?>floorsListing" method="POST" id="searchList">
                             <div class="input-group">
@@ -35,8 +35,8 @@
                   <table class="table table-hover">
                     <tr>
                       <th>Id</th>
-                      <th>Floor Code</th>
-                      <th>Floor Name</th>
+                      <th>Code d'Étages</th>
+                      <th>Nom de l'Étages</th>
                       <th>Description</th>                      
                       <th width="10%" class="text-center">Actions</th>
                     </tr>

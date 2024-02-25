@@ -2,8 +2,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Change Password
-        <small>Set new password for your account</small>
+        Changer le mot de passe
+        <small>changer le mot de passe de votre compte</small>
       </h1>
     </section>
     <section class="content">

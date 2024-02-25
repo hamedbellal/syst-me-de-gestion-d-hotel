@@ -135,11 +135,11 @@ class Booking extends BaseController
             
             if($result > 0)
             {
-                $this->session->set_flashdata('success', 'New booking created successfully');
+                $this->session->set_flashdata('success', 'Nouvelle réservation créée avec succès');
             }
             else
             {
-                $this->session->set_flashdata('error', 'Booking creation failed');
+                $this->session->set_flashdata('error', 'La création de la réservation a échoué');
             }
             
             redirect('addNewBooking');
@@ -215,13 +215,13 @@ class Booking extends BaseController
     {
         $html = '<div class="box box-primary">';
         $html .= '<div class="box-body">';
-        $html .= '<div class="row"><div class="col-md-12"><div class="callout callout-success"><h4>Rooms Are Available!</h4><p>Please select room from below dropdown</p></div></div></div>';
+        $html .= '<div class="row"><div class="col-md-12"><div class="callout callout-success"><h4>il y a des chambres disponible!</h4><p>selesct la chambre dans la liste suivante</p></div></div></div>';
         $html .= '<div class="row">';
         $html .= '<div class="col-md-12">';
         $html .= '<div class="form-group">';
 
         $html .= '<select class="form-control" id="roomAvailableId" name="roomAvailableId">
-                    <option value="">Rooms are available</option>';
+                    <option value="">les chambres disponibles</option>';
         $roomDescription = '';
         
         foreach($availableRooms as $room) {
@@ -240,7 +240,7 @@ class Booking extends BaseController
     {
         $html = '<div class="box box-primary">';
         $html .= '<div class="box-body">';
-        $html .= '<div class="row"><div class="col-md-12"><div class="callout callout-warning"><h4>Rooms Not Available!</h4><p>Please change the criteria for availability</p></div></div></div>';
+        $html .= '<div class="row"><div class="col-md-12"><div class="callout callout-warning"><h4>il n y a pas des chambres disponibles</h4><p>Veuillez modifier les criteres de disponibilité</p></div></div></div>';
         $html .= '</div></div>';
         
         return $html;

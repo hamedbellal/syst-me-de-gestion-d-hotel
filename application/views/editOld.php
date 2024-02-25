@@ -25,8 +25,8 @@ if(!empty($userInfo))
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        <i class="fa fa-users" aria-hidden="true"></i> User Management
-        <small>Add / Edit User</small>
+        <i class="fa fa-users" aria-hidden="true"></i> Gestion des utilisateurs
+        <small>Ajouter/Modifier un utilisateur</small>
       </h1>
     </section>
     
@@ -41,7 +41,7 @@ if(!empty($userInfo))
                 
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">Enter User Details</h3>
+                        <h3 class="box-title">Entrez les détails de l'utilisateur</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
                     
@@ -50,7 +50,7 @@ if(!empty($userInfo))
                             <div class="row">
                                 <div class="col-md-6">                                
                                     <div class="form-group">
-                                        <label for="fname">Full Name</label>
+                                        <label for="fname">Nom Complet</label>
                                         <input type="text" class="form-control" id="fname" placeholder="Full Name" name="fname" value="<?php echo $name; ?>" maxlength="128">
                                         <input type="hidden" value="<?php echo $userId; ?>" name="userId" />    
                                     </div>
@@ -58,7 +58,7 @@ if(!empty($userInfo))
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="email">Email address</label>
+                                        <label for="email">adresse Email</label>
                                         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" value="<?php echo $email; ?>" maxlength="128">
                                     </div>
                                 </div>
@@ -66,13 +66,13 @@ if(!empty($userInfo))
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="password">Password</label>
+                                        <label for="password">Mot de Passe</label>
                                         <input type="password" class="form-control" id="password" placeholder="Password" name="password" maxlength="10">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="cpassword">Confirm Password</label>
+                                        <label for="cpassword">Confirmez le Mot de Passe</label>
                                         <input type="password" class="form-control" id="cpassword" placeholder="Confirm Password" name="cpassword" maxlength="10">
                                     </div>
                                 </div>
@@ -80,15 +80,15 @@ if(!empty($userInfo))
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="mobile">Mobile Number</label>
+                                        <label for="mobile">Numéro de Portable</label>
                                         <input type="text" class="form-control" id="mobile" placeholder="Mobile Number" name="mobile" value="<?php echo $mobile; ?>" maxlength="10">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="role">Role</label>
+                                        <label for="role">Rôle</label>
                                         <select class="form-control" id="role" name="role">
-                                            <option value="0">Select Role</option>
+                                            <option value="0">Select Rôle</option>
                                             <?php
                                             if(!empty($roles))
                                             {

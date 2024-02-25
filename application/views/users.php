@@ -2,9 +2,9 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        <i class="fa fa-users" aria-hidden="true"></i> User Management
-        <small>Add, Edit, Delete</small>
-        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNew"><i class="fa fa-plus" aria-hidden="true"></i> Add New User</a></span>
+        <i class="fa fa-users" aria-hidden="true"></i> Gestion des utilisateurs
+        <small>Ajouter / modifier / supprimer</small>
+        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNew"><i class="fa fa-plus" aria-hidden="true"></i> Ajouter un nouveau utilisateur</a></span>
       </h1>
     </section>
     <section class="content">
@@ -19,11 +19,11 @@
             <div class="col-xs-12">
               <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Users List</h3>
+                    <h3 class="box-title">Liste des utilisateurs</h3>
                     <div class="box-tools">
                         <form action="<?php echo base_url() ?>userListing" method="POST" id="searchList">
                             <div class="input-group">
-                              <input type="text" name="searchText" value="<?php echo $searchText; ?>" class="form-control input-sm pull-right" style="width: 150px;" placeholder="Search"/>
+                              <input type="text" name="searchText" value="<?php echo $searchText; ?>" class="form-control input-sm pull-right" style="width: 150px;" placeholder="Chercher"/>
                               <div class="input-group-btn">
                                 <button class="btn btn-sm btn-default searchList"><i class="fa fa-search"></i></button>
                               </div>
@@ -35,10 +35,10 @@
                   <table class="table table-hover">
                     <tr>
                       <th>Id</th>
-                      <th>Name</th>
+                      <th>Nom</th>
                       <th>Email</th>
-                      <th>Mobile</th>
-                      <th>Role</th>
+                      <th>Portable</th>
+                      <th>Rôle</th>
                       <th width="10%" class="text-center">Actions</th>
                     </tr>
                     <?php

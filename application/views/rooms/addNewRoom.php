@@ -2,8 +2,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Rooms Management
-        <small>Add / Edit Room Size</small>
+        Gestion des Chambres
+        <small>Ajouter/Modifier la taille de la chambre</small>
       </h1>
     </section>
     
@@ -18,7 +18,7 @@
                 
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">Enter Room Details</h3>
+                        <h3 class="box-title">Entrez les détails de la chambre</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
                     
@@ -27,9 +27,9 @@
                             <div class="row">
                                 <div class="col-md-6">                                
                                     <div class="form-group">
-                                        <label for="fname">Floor</label>
+                                        <label for="fname">Étage</label>
                                         <select class="form-control" id="floorId" name="floorId">
-                                            <option value="">Select Floor</option>
+                                            <option value="">Select Étage</option>
                                             <?php
                                             if(!empty($floors))
                                             {
@@ -46,9 +46,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="email">Room Size</label>
+                                        <label for="email">Taille du chambre</label>
                                         <select class="form-control" id="sizeId" name="sizeId">
-                                            <option value="">Select Room Sizes</option>
+                                            <option value="">Select Taille du chambre</option>
                                             <?php
                                             if(!empty($roomSizes))
                                             {
@@ -67,7 +67,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="mobile">Room Number</label>
+                                        <label for="mobile">Numéro du chambre</label>
                                         <input type="text" class="form-control" id="roomNumber" name="roomNumber" maxlength="10">
                                     </div>
                                 </div>

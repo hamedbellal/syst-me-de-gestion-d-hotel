@@ -18,10 +18,10 @@
   <body class="login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="#"><b>DigiLodge</b><br>Digital Lodging System</a>
+        <a href="#"><b>DigiLodge</b><br>Système de gestion d'hôtel </a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
-        <p class="login-box-msg">Sign In</p>
+        <p class="login-box-msg">S'identifier</p>
         <?php $this->load->helper('form'); ?>
         <div class="row">
             <div class="col-md-12">
@@ -58,12 +58,12 @@
               </div>  -->                       
             </div><!-- /.col -->
             <div class="col-xs-4">
-              <input type="submit" class="btn btn-primary btn-block btn-flat" value="Sign In" />
+              <input type="submit" class="btn btn-primary btn-block btn-flat" value="S'identifier" />
             </div><!-- /.col -->
           </div>
         </form>
 
-        <a href="<?php echo base_url() ?>forgotPassword">Forgot Password</a><br>
+        <a href="<?php echo base_url() ?>forgotPassword"></a><br>
         
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->

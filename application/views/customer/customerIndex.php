@@ -2,9 +2,9 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        <i class="fa fa-users" aria-hidden="true"></i> Customer Management
-        <small>Add, Edit, Delete</small>
-        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewCustomer"><i class="fa fa-plus" aria-hidden="true"></i> Add New Customer</a></span>
+        <i class="fa fa-users" aria-hidden="true"></i> Gestion de la clientèle
+        <small>Ajouter / modifier / supprimer</small>
+        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewCustomer"><i class="fa fa-plus" aria-hidden="true"></i> Ajouter un nouveau client</a></span>
       </h1>
     </section>
     <section class="content">
@@ -19,7 +19,7 @@
             <div class="col-xs-12">
               <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Customer List</h3>
+                    <h3 class="box-title">Liste de clients</h3>
                     <div class="box-tools">
                         <form action="<?php echo base_url() ?>customerListing" method="POST" id="searchList">
                             <div class="input-group">
@@ -35,9 +35,9 @@
                   <table class="table table-hover">
                     <tr>
                       <th>Id</th>
-                      <th>Name</th>             
-                      <th>Mobile</th>
-                      <th>Address</th>
+                      <th>Nom</th>             
+                      <th>Tel</th>
+                      <th>Adresse</th>
                       <th>Email</th>
                       <th class="text-center">Actions</th>
                     </tr>

@@ -2,8 +2,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-      <i class="fa fa-book" aria-hidden="true"></i> Booking Management
-        <small>Create / Edit Booking</small>
+      <i class="fa fa-book" aria-hidden="true"></i> Gestion des réservations
+        <small>Créer / Modifier une réservation</small>
       </h1>
     </section>
     
@@ -15,7 +15,7 @@
                 
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">Enter Booking Details</h3>
+                        <h3 class="box-title">Entrez les détails de la réservation : </h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
                     
@@ -24,7 +24,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="startDate">From Date</label>
+                                        <label for="startDate">Date début</label>
                                         <div class="input-group">
                                             <input type="text" id="startDate" name="startDate" value="" class="form-control" placeholder="yyyy-mm-dd" autocomplete="off"/>
                                             <div class="input-group-addon">
@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="endDate">To Date</label>
+                                        <label for="endDate">Date fin</label>
                                         <div class="input-group">
                                             <input type="text" id="endDate" name="endDate" value="" class="form-control" placeholder="yyyy-mm-dd" autocomplete="off"/>
                                             <div class="input-group-addon">
@@ -48,9 +48,9 @@
                             <div class="row">
 								<div class="col-md-6">                                
                                     <div class="form-group">
-                                        <label for="floorId">Floor</label>
+                                        <label for="floorId">Étage</label>
                                         <select class="form-control" id="floorId" name="floorId">
-                                            <option value="">Select Floor</option>
+                                            <option value="">Sélectionnez l'étage</option>
                                             <?php
                                             if(!empty($floors))
                                             {
@@ -67,9 +67,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="sizeId">Room Size</label>
+                                        <label for="sizeId">Taille de la chambre</label>
                                         <select class="form-control" id="sizeId" name="sizeId">
-                                            <option value="">Select Room Sizes</option>
+                                            <option value="">Select taille</option>
                                             <?php
                                             if(!empty($roomSizes))
                                             {
@@ -87,7 +87,7 @@
                             </div>
                             <div class="row">
 							    <div class="col-md-12 text-right">                                
-                                    <button type="button" class="btn btn-primary btn-md" id='checkAvailableBtn'>Check Availability</button>
+                                    <button type="button" class="btn btn-primary btn-md" id='checkAvailableBtn'>Verifier la Disponibilité</button>
                                     <!-- <button type="button" class="btn btn-default  btn-md">Reset</button> -->
                                 </div>
                             </div>
@@ -95,9 +95,9 @@
                             <div class="row">
 							    <div class="col-md-6">                                
                                     <div class="form-group">
-                                        <label for="roomId">Room Number</label>
-                                        <select class="form-control" id="roomId" name="roomId" readonly style='pointer-events:none'>
-                                            <option value="">Select Room</option>
+                                        <label for="roomId">Numéro du chambre</label>
+                                        <select class="form-control" id="roomId" name="roomId" >
+                                            <option value="">Select chambre</option>
                                             <?php
                                             if(!empty($rooms))
                                             {
@@ -114,7 +114,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="customerId">Customer (Click on <i class="fa fa-search"></i> for search)</label>
+                                        <label for="customerId">Client (Cliquer sur <i class="fa fa-search"></i> pour chercher)</label>
                                         <div class="input-group">
                                             <input type="text" value="" class="form-control" id="customerName" name="customerName" placeholder="Type name and click on magnifier" autocomplete="off" />
                                             <div class="input-group-addon">
@@ -122,7 +122,7 @@
                                             </div>
                                         </div>
                                         <select class="form-control" id="customerId" name="customerId">
-                                            <option value="">Select Customer</option>
+                                            <option value="">Select Client</option>
                                         </select>
                                     </div>
                                 </div>
@@ -130,7 +130,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="comments">Comments</label>
+                                        <label for="comments">commentaires</label>
                                         <textarea name='comments' id="comments"></textarea>
                                     </div>
                                 </div>
@@ -139,8 +139,8 @@
                         </div><!-- /.box-body -->
     
                         <div class="box-footer">
-                            <input type="submit" class="btn btn-lg btn-primary" value="Save" />
-                            <input type="reset" class="btn btn-default pull-right" value="Reset" />
+                            <input type="submit" class="btn btn-lg btn-primary" value="Enregistrer" />
+                            <input type="reset" class="btn btn-default pull-right" value="Annuler" />
                         </div>
                     </form>
                 </div>

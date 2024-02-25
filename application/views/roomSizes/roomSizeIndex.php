@@ -2,9 +2,9 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Room Size Management
+        Gestion de la taille du Chambre
         <small>Add, Edit, Delete</small>
-        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewRoomSize"><i class="fa fa-plus" aria-hidden="true"></i> Add New Room Size</a></span>
+        <span class='pull-right'><a class="btn btn-primary" href="<?php echo base_url(); ?>addNewRoomSize"><i class="fa fa-plus" aria-hidden="true"></i> Ajouter une nouvelle taille de chambre</a></span>
       </h1>
     </section>
     <section class="content">
@@ -19,7 +19,7 @@
             <div class="col-xs-12">
               <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Room Size</h3>
+                    <h3 class="box-title">Taille du chambre</h3>
                     <div class="box-tools">
                         <form action="<?php echo base_url() ?>roomSizesListing" method="POST" id="searchList">
                             <div class="input-group">
@@ -35,8 +35,8 @@
                   <table class="table table-hover">
                     <tr>
                       <th>Id</th>
-                      <th>Size Title</th>
-                      <th>Size Description</th>
+                      <th>Titre du taille</th>
+                      <th>Description du taille</th>
                       <th class="text-center">Actions</th>
                     </tr>
                     <?php

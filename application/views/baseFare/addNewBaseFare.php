@@ -3,8 +3,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Base Fare Management
-        <small>Add / Edit Base Fare</small>
+        Gestion des tarifs de base
+        <small>Ajouter/Modifier le tarif de base</small>
       </h1>
     </section>
     
@@ -17,7 +17,7 @@
 
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">Enter Fare Details</h3>
+                        <h3 class="box-title">Entrez les détails du tarif</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
                     
@@ -26,9 +26,9 @@
                             <div class="row">
                                 <div class="col-md-6">                                
                                     <div class="form-group">
-                                        <label for="sizeId">Room Size</label>
+                                        <label for="sizeId">Taille du chambre</label>
                                         <select class="form-control" id="sizeId" name="sizeId">
-                                            <option value="">Select Room Sizes</option>
+                                            <option value="">Select Taille du chambre</option>
                                             <?php
                                             if(!empty($roomSizes))
                                             {
@@ -50,13 +50,13 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="baseFareHour">Hourly Fare</label>
+                                        <label for="baseFareHour">Tarif horaire</label>
                                         <input type="text" value="<?php  echo set_value('baseFareHour') ?>" class="form-control" id="baseFareHour" name="baseFareHour" maxlength="10" placeholder="hourly basis">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="baseFareDay">Daily Fare</label>
+                                        <label for="baseFareDay">Tarif journalier</label>
                                         <input type="text" value="<?php  echo set_value('baseFareDay') ?>" class="form-control" id="baseFareDay" name="baseFareDay" maxlength="10" placeholder="daily basis">
                                     </div>
                                 </div>    
@@ -64,13 +64,13 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="serviceTax">Service Tax</label>
+                                        <label for="serviceTax">Taxe de service</label>
                                         <input type="text" value="<?php  echo set_value('serviceTax') ?>" class="form-control" id="serviceTax" name="serviceTax" maxlength="10"  placeholder="e.g. 15.00">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="serviceCharge">Service Charge</label>
+                                        <label for="serviceCharge">Frais de service</label>
                                         <input type="text" value="<?php  echo set_value('serviceCharge') ?>" class="form-control" id="serviceTax" name="serviceCharge" maxlength="10" placeholder="e.g. 3.75">
                                     </div>
                                 </div>    

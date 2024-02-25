@@ -2,8 +2,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Customer Management
-        <small>Add / Edit Customer</small>
+        Gestion de la clientèle
+        <small>Ajouter/Modifier un client</small>
       </h1>
     </section>
     
@@ -18,7 +18,7 @@
                 
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">Enter Customer Details</h3>
+                        <h3 class="box-title">Entrez les détails du client</h3>
                     </div><!-- /.box-header -->
                     <!-- form start -->
                     
@@ -27,7 +27,7 @@
                             <div class="row">
                                 <div class="col-md-12">                                
                                     <div class="form-group">
-                                        <label for="customerName">Customer Name</label>
+                                        <label for="customerName">Nom du client</label>
                                         <input type="text" class="form-control required" id="customerName" name="customerName" maxlength="512">
                                     </div>
                                 </div>
@@ -35,7 +35,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="customerAddress">Customer Address</label>
+                                        <label for="customerAddress">Adresse du client</label>
                                         <input type="text" class="form-control" id="customerAddress" name="customerAddress" maxlength="1024">
                                     </div>
                                 </div>
@@ -43,13 +43,13 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="form-group">
-                                        <label for="customerPhone">Customer Phone</label>
+                                        <label for="customerPhone">Téléphone du client</label>
                                         <input type="text" class="form-control" id="customerPhone" name="customerPhone" maxlength="15">
                                     </div>
                                 </div>
                                 <div class="col-md-7">
                                     <div class="form-group">
-                                        <label for="customerEmail">Customer Email</label>
+                                        <label for="customerEmail">Email client</label>
                                         <input type="text" class="form-control" id="customerEmail" name="customerEmail" maxlength="128">
                                     </div>
                                 </div>
